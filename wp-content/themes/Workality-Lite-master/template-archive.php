@@ -2,6 +2,7 @@
 /*
 Template Name: Archive
 */
+ include_once("../../../wp-config.php");
 ?>
 <?php get_header(); ?>
 
