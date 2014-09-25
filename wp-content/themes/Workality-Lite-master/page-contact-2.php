@@ -1,10 +1,6 @@
 <?php
-/*
-Template Name: Full Width
-*/
+	include_once("_header.php");
 ?>
-<?php get_header(); ?>
-    
     	
     	<br class="clear" />
         <div class="row fitvids">
@@ -27,4 +23,6 @@ $(window).resize(function(){
             <?php endwhile; ?>
     		</div>
     	</div>
-<?php get_footer(); ?>
+<?php
+	include_once("_footer.php");
+?>
