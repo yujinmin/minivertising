@@ -72,7 +72,7 @@
       <div class="sixteen columns topmargin">
         <div class="six columns alpha">
           <a href="#" class="button navbarbutton pull-right"><i class="menu-icon"></i></a>
-          <a href="http://localhost/minivertising" class="main-logo" title="drone">MINIVERTISING</a>
+          <a href="http://localhost/minivertising" class="main-logo" title="drone"><img src="images/logo.png" borer="0" /></a>
         </div>
         <div class="ten columns omega header-right">
           <div class="nav-div">
