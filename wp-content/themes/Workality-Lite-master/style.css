@@ -53,13 +53,18 @@
 
 /* #Reset & Basics (Inspired by E. Meyers)
 ================================================== */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300);
+
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
-		vertical-align: baseline; }
+		vertical-align: baseline;
+		font-family: 'Roboto Condensed', 'Nanum Gothic Coding', "Helvetica Neue", Arial, Helvetica, sans-serif; }
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block; }
 	body {
@@ -87,7 +92,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 ================================================== */
 	body {
 		background: #f0f0f0 url(images/bgpatterns/light_toast.png);
-		font: 14px/22px "Helvetica Neue", Arial, Helvetica, sans-serif;
+		font: 14px/22px;
+		font-family: 'Roboto Condensed', 'Nanum Gothic Coding', "Helvetica Neue", Arial, Helvetica, sans-serif;
 		color: #444;
 		-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 		-webkit-text-size-adjust: 100%;
