@@ -99,7 +99,7 @@
 				 }
                  ?>
             </div>
-    		<div class="ten columns omega header-right" style="display:none;">
+    		<div class="ten columns omega header-right">
             	<div class="nav-div">
                 <?php 
 				$md_head_search = of_get_option('md_header_disable_search');
