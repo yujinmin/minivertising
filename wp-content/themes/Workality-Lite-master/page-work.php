@@ -35,11 +35,11 @@
 	if ($thumb_flag == 1)
 	{
 ?>
-            <img src="<?=$home?>wp-content/uploads/<?php echo $date_array2[0]?>/<?php echo $date_array2[1]?>/<?=$thumb_img?>.png" data-small="<?=$home?>wp-content/uploads/<?php echo $date_array2[0]?>/<?php echo $date_array2[1]?>/<?=$thumb_img?>-150x113.png" data-large="<?=$home?>wp-content/uploads/<?php echo $date_array2[0]?>/<?php echo $date_array2[1]?>/<?=$thumb_img?>-300x226.png" noimage="" title="<?=$data[post_title]?>" alt="<?=$data[post_title]?>" />
+            <img src="<?=$home?>/wp-content/uploads/<?php echo $date_array2[0]?>/<?php echo $date_array2[1]?>/<?=$thumb_img?>.png" data-small="<?=$home?>/wp-content/uploads/<?php echo $date_array2[0]?>/<?php echo $date_array2[1]?>/<?=$thumb_img?>-150x113.png" data-large="<?=$home?>/wp-content/uploads/<?php echo $date_array2[0]?>/<?php echo $date_array2[1]?>/<?=$thumb_img?>-300x226.png" noimage="" title="<?=$data[post_title]?>" alt="<?=$data[post_title]?>" />
 <?php
 	}else{
 ?>
-            <img src="<?=$home?>wp-content/themes/Workality-Lite-master/images/no-image.jpg" data-small="<?=$home?>wp-content/themes/Workality-Lite-master/images/no-image.png-150x113.jpg" data-large="<?=$home?>wp-content/themes/Workality-Lite-master/images/no-image.png-300x226.jpg" title="<?=$data[post_title]?>" alt="<?=$data[post_title]?>" />
+            <img src="<?=$home?>/wp-content/themes/Workality-Lite-master/images/no-image.jpg" data-small="<?=$home?>wp-content/themes/Workality-Lite-master/images/no-image.png-150x113.jpg" data-large="<?=$home?>/wp-content/themes/Workality-Lite-master/images/no-image.png-300x226.jpg" title="<?=$data[post_title]?>" alt="<?=$data[post_title]?>" />
 <?php
 	}
 ?>

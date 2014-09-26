@@ -6,6 +6,11 @@
 	mysqli_query($my_db,"set session character_set_connection=utf8;");
 	mysqli_query($my_db,"set session character_set_results=utf8;");
 	mysqli_query($my_db,"set session character_set_client=utf8;");
+
+	//include_once("config.php");
+	$query_options = "SELECT option_value FROM wp_options WHERE option_name='home'";
+	list($home) = mysqli_fetch_array(mysqli_query($my_db, $query_options));
+
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6"> <![endif]-->
@@ -28,9 +33,9 @@
  
     <!-- CSS
   ================================================== -->
-    <link rel="stylesheet" type="text/css" media="all" href="http://localhost/minivertising/wp-content/themes/Workality-Lite-master/style.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?=$home?>/wp-content/themes/Workality-Lite-master/style.css" />
     <!--[if lt IE 9]>
-    <link rel="stylesheet" type="text/css" media="all" href="http://localhost/minivertising/wp-content/themes/Workality-Lite-master/style_ie.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="<?=$home?>/wp-content/themes/Workality-Lite-master/style_ie.css" />
     <![endif]-->
 
     <!--[if lt IE 9]>
@@ -39,31 +44,31 @@
 
     <!-- Favicons
     ================================================== -->
-    <link rel="apple-touch-icon" href="http://localhost/minivertising/wp-content/themes/Workality-Lite-master/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="http://localhost/minivertising/wp-content/themes/Workality-Lite-master/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="http://localhost/minivertising/wp-content/themes/Workality-Lite-master/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" href="<?=$home?>/wp-content/themes/Workality-Lite-master/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?=$home?>/wp-content/themes/Workality-Lite-master/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?=$home?>/wp-content/themes/Workality-Lite-master/images/apple-touch-icon-114x114.png">
         
     <!-- RSS
     ================================================== -->
-    <link rel="alternate" type="application/rss+xml" title="MINIVERTISING Feed" href="http://localhost/minivertising/rss">
-    <link rel="pingback" href="http://localhost/minivertising/xmlrpc.php" />
+    <link rel="alternate" type="application/rss+xml" title="MINIVERTISING Feed" href="<?=$home?>/rss">
+    <link rel="pingback" href="<?=$home?>/xmlrpc.php" />
 
     <!-- Head End
     ================================================== -->
-    <link rel="alternate" type="application/rss+xml" title="MINIVERTISING &raquo; Feed" href="http://localhost/minivertising/?feed=rss2" />
-    <link rel="alternate" type="application/rss+xml" title="MINIVERTISING &raquo; Comments Feed" href="http://localhost/minivertising/?feed=comments-rss2" />
-    <link rel="alternate" type="application/rss+xml" title="MINIVERTISING &raquo; CONTACT Comments Feed" href="http://localhost/minivertising/?feed=rss2&#038;page_id=109" />
+    <link rel="alternate" type="application/rss+xml" title="MINIVERTISING &raquo; Feed" href="<?=$home?>/?feed=rss2" />
+    <link rel="alternate" type="application/rss+xml" title="MINIVERTISING &raquo; Comments Feed" href="<?=$home?>/?feed=comments-rss2" />
+    <link rel="alternate" type="application/rss+xml" title="MINIVERTISING &raquo; CONTACT Comments Feed" href="<?=$home?>/?feed=rss2&#038;page_id=109" />
     <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='dashicons-css'  href='http://localhost/minivertising/wp-includes/css/dashicons.min.css?ver=4.0' type='text/css' media='all' />
-    <link rel='stylesheet' id='admin-bar-css'  href='http://localhost/minivertising/wp-includes/css/admin-bar.min.css?ver=4.0' type='text/css' media='all' />
-    <script type='text/javascript' src='http://localhost/minivertising/wp-content/themes/Workality-Lite-master/js/modernizr.js?ver=4.0'></script>
+    <link rel='stylesheet' id='dashicons-css'  href='<?=$home?>/wp-includes/css/dashicons.min.css?ver=4.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='admin-bar-css'  href='<?=$home?>/wp-includes/css/admin-bar.min.css?ver=4.0' type='text/css' media='all' />
+    <script type='text/javascript' src='<?=$home?>/wp-content/themes/Workality-Lite-master/js/modernizr.js?ver=4.0'></script>
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js?ver=4.0'></script>
-    <script type='text/javascript' src='http://localhost/minivertising/wp-content/themes/Workality-Lite-master/js/include.js?ver=4.0'></script>
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://localhost/minivertising/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://localhost/minivertising/wp-includes/wlwmanifest.xml" /> 
+    <script type='text/javascript' src='<?=$home?>/wp-content/themes/Workality-Lite-master/js/include.js?ver=4.0'></script>
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="<?=$home?>/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="<?=$home?>/wp-includes/wlwmanifest.xml" /> 
     <meta name="generator" content="WordPress 4.0" />
-    <link rel='canonical' href='http://localhost/minivertising/?page_id=109' />
-    <link rel='shortlink' href='http://localhost/minivertising/?p=109' />
+    <link rel='canonical' href='<?=$home?>/?page_id=109' />
+    <link rel='shortlink' href='<?=$home?>/?p=109' />
     <style type="text/css" media="print">#wpadminbar { display:none; }</style>
     <style type="text/css" media="screen">
 		html { margin-top: 32px !important; }
@@ -107,11 +112,11 @@
       <div class="sixteen columns topmargin">
         <div class="six columns alpha">
           <a href="#" class="button navbarbutton pull-right"><i class="menu-icon"></i></a>
-          <a href="http://localhost/minivertising" class="main-logo" title="drone"><img src="http://localhost/minivertising/wp-content/themes/Workality-Lite-master/images/logo.png" borer="0" /></a>
+          <a href="<?=$home?>" class="main-logo" title="drone"><img src="<?=$home?>/wp-content/themes/Workality-Lite-master/images/logo.png" borer="0" /></a>
         </div>
         <div class="ten columns omega header-right">
           <div class="nav-div">
-            <form action="http://localhost/minivertising">
+            <form action="<?=$home?>">
               <input type="text" name="s" class="medium" value="">
               <button type="submit"><i class='icon-search'></i></button>
             </form>
@@ -136,7 +141,7 @@
 	}
 ?>
 
-              <a href="http://localhost/minivertising/?page_id=2">ABOUT</a>
+              <a href="<?=$home?>/?page_id=2">ABOUT</a>
             </li>
 <?php
 	if (strpos($_SERVER['REQUEST_URI'], "page_id=133") !== false)
@@ -150,7 +155,7 @@
 <?php
 	}
 ?>
-              <a href="http://localhost/minivertising/?page_id=133">WORK</a>
+              <a href="<?=$home?>/?page_id=133">WORK</a>
             </li>
 <?php
 	if (strpos($_SERVER['REQUEST_URI'], "page_id=136") !== false)
@@ -164,7 +169,7 @@
 <?php
 	}
 ?>
-              <a href="http://localhost/minivertising/?page_id=136">NEWS</a>
+              <a href="<?=$home?>/?page_id=136">NEWS</a>
             </li>
 <?php
 	if (strpos($_SERVER['REQUEST_URI'], "page_id=109") !== false)
@@ -178,7 +183,7 @@
 <?php
 	}
 ?>
-              <a href="http://localhost/minivertising/?page_id=109">CONTACT</a>
+              <a href="<?=$home?>/?page_id=109">CONTACT</a>
             </li>
           </ul> 
         </div>
