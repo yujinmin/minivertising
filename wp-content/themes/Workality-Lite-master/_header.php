@@ -1,14 +1,23 @@
+<?php
+	$my_db = new mysqli("localhost", "root", "apmsetup", "minivertising");
+	if (mysqli_connect_error()) {
+		exit('Connect Error (' . mysqli_connect_errno() . ') '. mysqli_connect_error());
+	}
+	mysqli_query($my_db,"set session character_set_connection=utf8;");
+	mysqli_query($my_db,"set session character_set_results=utf8;");
+	mysqli_query($my_db,"set session character_set_client=utf8;");
+?>
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en-US"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en-US"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en-US"> <![endif]-->
+<!--[if lt IE 7 ]><html class="ie ie6"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en-US"> <!--<![endif]-->
+<html> <!--<![endif]-->
   <head>
 
   <!-- Basic Page Needs
   ================================================== -->
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>MINIVERTISING</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -67,7 +76,33 @@
     
   </head>
 
+<?php
+	if (strpos($_SERVER['REQUEST_URI'], "page_id=2") !== false)
+	{
+?>
+  <body class="page page-id-2 page-template-default logged-in admin-bar no-customize-support">
+<?php
+	}
+	else if (strpos($_SERVER['REQUEST_URI'], "page_id=133") !== false)
+	{
+?>
+  <body class="page page-id-133 page-template-blog logged-in admin-bar no-customize-support">
+<?php
+	}
+	else if (strpos($_SERVER['REQUEST_URI'], "page_id=136") !== false)
+	{
+?>
+  <body class="page page-id-136 page-template-blog logged-in admin-bar no-customize-support">
+<?php
+	}
+	else
+	{
+?>
   <body class="page page-id-109 page-template-default logged-in admin-bar no-customize-support">
+<?php
+	}
+?>
+
     <div class="container">
       <div class="sixteen columns topmargin">
         <div class="six columns alpha">
