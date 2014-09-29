@@ -30,7 +30,7 @@
       <div class="four columns">
         <strong>Client</strong> <br />
         Client 명
-      </div> 
+      </div>
       <br class="clear" />
       <hr />
     </div>
@@ -43,12 +43,12 @@
           <strong>SHARE</strong>
           <br class="clear" />
           <div class="buttons"><div class="facebook shr"><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fworkality-lite.northeme.com%2Fworks%2Fsustainability-report%2F&amp;send=false&amp;layout=button_count&amp;width=50&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:21px;" allowTransparency="true"></iframe></div><br class="clear"><div class="twitter shr"><a href="https://twitter.com/share" class="twitter-share-button" data-count="none" data-url="http://workality-lite.northeme.com/works/sustainability-report/" data-text="Sustainability Report">Tweet</a></div><br class="clear"><div class="googleplus shr"><div class="g-plusone" data-size="medium" data-annotation="none"></div></div><br class="clear"><div class="pinterest shr"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fworkality-lite.northeme.com%2Fworks%2Fsustainability-report%2F&amp;media=http%3A%2F%2Fworkality-lite.northeme.com%2Fwp-content%2Fuploads%2F2012%2F10%2FJYD19-460x350.jpeg&amp;description=Sustainability+Report" class="pin-it-button"><img style="border:none" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></div><br class="clear"></div></div></div>-->
-      </div>                       
+      </div>
       <br class="clear" />
       <div class="postcontent fitvids">
         <div class="contentimages fifteen columns offset-by-half alpha"><?=$post_array[post_content]?></div>
         <br class="clear" />
-      </div>     
+      </div>
       <!-- <div class="fifteensp columns offset-by-half alpha" style="margin-bottom:10px;">
         <div class="sharingbottom border-color bottoms"> 
         <div class="resdontshow shr"><strong>SHARE : </strong></div>
@@ -63,7 +63,7 @@
     </div>
     <br class="clear" />
     <br class="clear" />
-  </div>     
+  </div>
 </div> 
 <?php
 	include_once("_footer.php");
