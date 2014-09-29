@@ -97,23 +97,25 @@
   <body class="page-template-default logged-in admin-bar no-customize-support">
 
     <div class="container">
-      <div class="sixteen columns" style="margin-top:0px">
+    
+      <div class="sixteen columns topmargin clearfix">
         <div class="six columns alpha">
           <a href="#" class="button navbarbutton pull-right"><i class="menu-icon"></i></a>
           <a href="<?=$home?>" class="main-logo" title="drone"><img src="<?=$home?>/wp-content/themes/Workality-Lite-master/images/logo.png" borer="0" /></a>
         </div>
-        <!-- <div class="ten columns omega header-right">
+        
+        
+        <div class="ten columns omega header-right" style="display:none;">
           <div class="nav-div">
             <form action="<?=$home?>">
               <input type="text" name="s" class="medium" value="">
               <button type="submit"><i class='icon-search'></i></button>
             </form>
           </div>
-        </div> -->
-        <br class="clear" />
-        <div class="six columns alpha">
-          <h6 class="subtext"></h6>
         </div>
+        
+        
+     
         <div class="ten columns omega header-right">
           <ul id="menu-menu1" class="main-nav text-shadow">
 <?php
