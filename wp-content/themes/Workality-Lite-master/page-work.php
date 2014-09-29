@@ -2,6 +2,7 @@
 	include_once("_header.php");
 ?>
     <div id="post-list" class="row">
+
 <?php
 	$query = "SELECT * FROM wp_posts WHERE post_type='post' AND post_status <> 'auto-draft' ORDER BY ID DESC";
 	$res = mysqli_query($my_db, $query);
@@ -27,7 +28,7 @@
 				}
 			}
 ?>
-      <div class="one-third column featured project-item" >
+      <div class="four columns featured project-item" >
         <div class="imgdiv">
           <a href="<?=$data[guid]?>" class="getworks" data-type="works" data-id="22" data-token="5b4ac08af1">
             <span></span>

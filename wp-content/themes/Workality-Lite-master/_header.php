@@ -127,14 +127,14 @@
           <a href="#" class="button navbarbutton pull-right"><i class="menu-icon"></i></a>
           <a href="<?=$home?>" class="main-logo" title="drone"><img src="<?=$home?>/wp-content/themes/Workality-Lite-master/images/logo.png" borer="0" /></a>
         </div>
-        <div class="ten columns omega header-right">
+        <!-- <div class="ten columns omega header-right">
           <div class="nav-div">
             <form action="<?=$home?>">
               <input type="text" name="s" class="medium" value="">
               <button type="submit"><i class='icon-search'></i></button>
             </form>
           </div>
-        </div>
+        </div> -->
         <br class="clear" />
         <div class="six columns alpha">
           <h6 class="subtext"></h6>
