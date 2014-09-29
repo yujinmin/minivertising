@@ -1,7 +1,7 @@
 <?php
 	include_once("_header.php");
 ?>
-    <div id="post-list" class="row">
+    <div id="post-list" class="row" style="margin-top:0px">
 
 <?php
 	$query = "SELECT * FROM wp_posts WHERE post_type='post' AND post_status <> 'auto-draft' ORDER BY ID DESC";

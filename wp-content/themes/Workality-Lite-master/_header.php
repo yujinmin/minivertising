@@ -94,35 +94,10 @@
     
   </head>
 
-<?php
-	if (strpos($_SERVER['REQUEST_URI'], "about") !== false)
-	{
-?>
-  <body class="page page-id-2 page-template-default logged-in admin-bar no-customize-support">
-<?php
-	}
-	else if (strpos($_SERVER['REQUEST_URI'], "work") !== false)
-	{
-?>
-  <body class="page page-id-133 page-template-blog logged-in admin-bar no-customize-support">
-<?php
-	}
-	else if (strpos($_SERVER['REQUEST_URI'], "news") !== false)
-	{
-?>
-  <body class="page page-id-136 page-template-blog logged-in admin-bar no-customize-support">
-<?php
-	}
-	else
-	{
-?>
-  <body class="page page-id-109 page-template-default logged-in admin-bar no-customize-support">
-<?php
-	}
-?>
+  <body class="page-template-default logged-in admin-bar no-customize-support">
 
     <div class="container">
-      <div class="sixteen columns topmargin">
+      <div class="sixteen columns" style="margin-top:0px">
         <div class="six columns alpha">
           <a href="#" class="button navbarbutton pull-right"><i class="menu-icon"></i></a>
           <a href="<?=$home?>" class="main-logo" title="drone"><img src="<?=$home?>/wp-content/themes/Workality-Lite-master/images/logo.png" borer="0" /></a>
