@@ -11,7 +11,7 @@
   </div>
             <?php endwhile; ?> -->
           <div id="gmap_div" style="height:300px;position:relative;">
-            <iframe src="https://a.tiles.mapbox.com/v4/minivertising.jkhj9560/attribution,zoompan.html?access_token=pk.eyJ1IjoibWluaXZlcnRpc2luZyIsImEiOiJCNXFCN25FIn0.dDiascoSjcN1uN3v77RlNw" id="gmap_iframe" height="300"></iframe>
+            <iframe src="https://a.tiles.mapbox.com/v4/minivertising.jkhj9560/attribution,zoompan.html?access_token=pk.eyJ1IjoibWluaXZlcnRpc2luZyIsImEiOiJCNXFCN25FIn0.dDiascoSjcN1uN3v77RlNw#17/37.48462/126.99073" id="gmap_iframe" height="300"></iframe>
           </div>
           <div id="msg_div">
             2F 931-9
@@ -28,7 +28,7 @@
 $(window).resize(function(){
   var b_width = document.body.clientWidth;
   var b_height = document.body.clientHeight;
-  var b_left = - (b_width / 4);
+  var b_left = - (b_width - 940) / 2;
   $("#gmap_div").css("width",b_width); 
   $("#gmap_div").css("left",b_left); 
   $("#gmap_iframe").css("width",b_width);
