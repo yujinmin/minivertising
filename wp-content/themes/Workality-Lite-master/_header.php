@@ -1,4 +1,17 @@
 <?php
+/*
+	if ( !isset($wp_did_header) ) {
+
+		$wp_did_header = true;
+
+		require_once( dirname(__FILE__) . '/wp-load.php' );
+
+		wp();
+
+		require_once( ABSPATH . WPINC . '/template-loader.php' );
+
+	}
+*/
 	$my_db = new mysqli("localhost", "root", "apmsetup", "minivertising");
 	if (mysqli_connect_error()) {
 		exit('Connect Error (' . mysqli_connect_errno() . ') '. mysqli_connect_error());
