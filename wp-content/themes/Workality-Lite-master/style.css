@@ -115,6 +115,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 ================================================== */
 	body {
 		background: #f0f0f0 url(images/bgpatterns/light_toast.png);
+		background:#A93133;
 		font: 14px/22px;
 		font-family: 'Roboto Condensed', 'Nanum Gothic Coding', "Helvetica Neue", Arial, Helvetica, sans-serif;
 		color: #444;
